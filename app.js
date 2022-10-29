@@ -99,11 +99,11 @@ hot ? console.log('weather is hot outside') : console.log('weather is cold')
 let subscribedd = false
 let loggedInn = true
 
-let str = subscribedd || loggedInn ? 'show the video' : 'hide the video'
-console.log(str);
+// let str = subscribedd || loggedInn ? 'show the video' : 'hide the video'
+//console.log(str);
 
 
-let cash = 30 
+let cash = 50 
 let price = 40
 let isStoreOpen = true
 
@@ -117,4 +117,54 @@ else if (cash<price && isStoreOpen === true) {
 
 else {
     console.log('please return during business hours')
+}
+
+// cash >= price && isStoreOpen 
+// ? console.log("give receipt")
+// : console.log("do not give receipt");
+
+//let str = cash >= price && isStoreOpen ? "give receipt" : "do not give receipt"
+//console.log(str);
+
+let count = 1;
+//console.log(count);
+//count = count + 1;
+
+//while (count <= 100) {
+//    console.log(count)
+//    count = count + 1
+//}
+
+//for (let i = 0; i < 3; i++) {
+//    console.log(i)
+//}
+
+//console.log(1)
+//console.log(2)
+//console.log(3)
+//console.log(4)
+//console.log(5)
+
+
+/* Write a for-loop that loops through 1 to 20
+* If the number is divisible by 3, print "Frontend"
+* If the number is divisible by 5, print "Simplified"
+* If the number is disvisible by 3 and 5 print "Frontend Simplified"
+* If the number is *not* divisible by either 3 or 5, print the number */
+
+
+for (let i = 1; i <= 20; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log(`${i} -> Frontend Simplified`)
+    }
+    else if (i % 3 === 0) {
+        console.log(`${i} -> Frontend`)
+    }
+    else if (i % 5 === 0) {
+        console.log(`${i} -> Simplified`)
+    }
+    else {
+        console.log(`${i} -> ${i}`)
+    }
+    
 }
